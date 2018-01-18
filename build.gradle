@@ -25,6 +25,8 @@ dependencies {
     compile("org.apache.tomcat.embed:tomcat-embed-el")
     compile("org.apache.tomcat.embed:tomcat-embed-websocket")
 
+    compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.1")
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 bootRun.environment([
