@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class InMemoryTimeEntryRepository implements TimeEntryRepository {
+
     List<TimeEntry> timeEntryList = new LinkedList<>();
     long nextId = 1;
 
