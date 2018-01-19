@@ -51,10 +51,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
 
             return statement;
         }, generatedKeyHolder);
-
-        timeEntry.setId(generatedKeyHolder.getKey().longValue());
-        return timeEntry;
-//        return find(generatedKeyHolder.getKey().longValue());
+        return find(generatedKeyHolder.getKey().longValue());
     }
 
     @Override
@@ -82,9 +79,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
                 timeEntry.getHours(),
                 id
         );
-        timeEntry.setId(id);
-        return timeEntry;
-//        return find(id);
+        return find(id);
     }
 
     @Override
