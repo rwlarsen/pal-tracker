@@ -5,3 +5,5 @@ applications:
   host: rwl-pal-tracker-review
   services:
   - tracker-database
+  env:
+    JBP_CONFIG_DEBUG: '{enabled: true}'
