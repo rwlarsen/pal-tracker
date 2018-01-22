@@ -7,3 +7,4 @@ applications:
   - tracker-database
   env:
     JBP_CONFIG_DEBUG: '{enabled: true}'
+    SECURITY_FORCE_HTTPS: true

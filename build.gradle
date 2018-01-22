@@ -8,6 +8,8 @@ plugins {
 }
 repositories {
     mavenCentral()
+    maven {url "repo.pivotal.io/snapshot"}
+    maven {url "repo.pivotal.io/milestone"}
 }
 dependencies {
 //    compile("org.springframework.boot:spring-boot-starter-web")
@@ -34,6 +36,8 @@ dependencies {
     compile("mysql:mysql-connector-java:6.0.6")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.springframework.boot:spring-boot-actuator-docs")
+    compile("org.springframework.boot:spring-boot-starter-security")
+
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
